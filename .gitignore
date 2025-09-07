@@ -1,0 +1,28 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# AWS credentials (never commit secrets)
+~/.aws/credentials
+~/.aws/config
+.env
+
+# IDE / Editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+
+# MacOS files
+.DS_Store
+
