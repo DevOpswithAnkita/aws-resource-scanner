@@ -57,7 +57,7 @@ aws-resource-scanner/
    4. Attach **ReadOnlyAccess** policy
    5. Download **Access Key & Secret Key**
 
-   **Custom Minimal Policy**
+   ***Option 2: Custom Minimal Policy**
 
    ```json
    {
