@@ -42,18 +42,23 @@ aws-resource-scanner/
    git clone https://github.com/DevOpswithAnkita/aws-resource-scanner.git
    cd aws-resource-scanner
    ```
- 2. **Create a venv**
-  ```bash
-   python3 -m venv .venv
-   ```
-   **Activate it**
-   ```bash
-     source .venv/bin/activate 
-   ```   
-   **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 2. Create and Setup Virtual Environment
+
+  1. **Create venv**
+      ```bash
+       python3 -m venv .venv
+       ```
+
+  2. **Activate venv**
+      ```bash
+      source .venv/bin/activate
+      ```
+
+  3. **Install dependencies**
+      ```bash
+      pip install -r requirements.txt
+      ```
+
 3. **Configure AWS IAM Setup**
 
    **Option 1: Use AWS Managed Policy (Recommended)**
@@ -121,25 +126,42 @@ Now open in your browser:
 - **Table View** → `/all-table`
 - **Swagger Docs** → `/docs`
 - **Fetch resources** → `/resources?region=us-east-1&service=ec2`
-
+- **Export Json** → `/export/json`
+- **Export Json** → `/export/json`
+- **Export Csv** → `/export/csv`
+- **Export Excel** → `/export/excel`
 ---
 
 ## config.yaml
 
 ```yaml
-regions:
-  - "us-east-1"
-  - "ap-south-1"
-  - "ap-south-2"
+# ACTIVE REGIONS (Uncommented)
+  - "us-east-1"              # US East (N. Virginia)
+  - "ap-south-1"             # Asia Pacific (Mumbai)
+  - "ap-south-2"             # Asia Pacific (Hyderabad)
+
 
 services:
+  # COMPUTE
   - "ec2"
-  - "s3"
-  - "rds"
   - "lambda"
   - "ecs"
   - "eks"
+  - "autoscaling"
+  
+  # NETWORKING
+  - "vpc"
+  - "security_groups"
+  - "subnets"
+  - "internet_gateways"
+  - "nat_gateways"
+  - "vpn_connections"
+  - "vpn_gateways"
+  - "route_tables"
+  - "elastic_ips"
+  ...........
 ```
 
 ---
 
+![AWS Resources](https://github.com/DevOpswithAnkita/aws-resource-scanner/AWS-Resources-html-page.png)
