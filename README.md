@@ -164,4 +164,4 @@ services:
 
 ---
 
-![AWS Resources](https://github.com/DevOpswithAnkita/aws-resource-scanner/AWS-Resources-html-page.png)
+![AWS Resources](AWS-Resources-html-page.png)
