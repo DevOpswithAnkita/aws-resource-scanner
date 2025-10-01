@@ -42,8 +42,15 @@ aws-resource-scanner/
    git clone https://github.com/DevOpswithAnkita/aws-resource-scanner.git
    cd aws-resource-scanner
    ```
-2. **Install dependencies**
-
+ 2. **Create a venv**
+  ```bash
+   python3 -m venv .venv
+   ```
+   **Activate it**
+   ```bash
+     source .venv/bin/activate 
+   ```   
+   **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
